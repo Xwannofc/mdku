@@ -95,24 +95,24 @@ let hit = [];
 const { addCmd, AddHituser } = require("./Lib/hitbot.js");
 
 // read database
-const tebaklagu = db.data.game.tebaklagu = { type: String };
-const kuismath = db.data.game.math = { type: String };
-const tebakgambar = db.data.game.tebakgambar = { type: String };
-const tebakkata = db.data.game.tebakkata = { type: String };
-const caklontong = db.data.game.lontong = { type: String };
-const caklontong_desk = db.data.game.lontong_desk = { type: String };
-const tebakkalimat = db.data.game.kalimat = { type: String };
-const tebaklirik = db.data.game.lirik = { type: String };
-const tebaktebakan = db.data.game.tebakan = { type: String };
-const sewa = db.data.others.sewa = { type: String };
-const _level = db.data.others.level = { type: String };
+const tebaklagu = db.data.game.tebaklagu = []
+const kuismath = db.data.game.math = []
+const tebakgambar = db.data.game.tebakgambar = []
+const tebakkata = db.data.game.tebakkata = []
+const caklontong = db.data.game.lontong = []
+const caklontong_desk = db.data.game.lontong_desk = []
+const tebakkalimat = db.data.game.kalimat = []
+const tebaklirik = db.data.game.lirik = []
+const tebaktebakan = db.data.game.tebakan = []
+const sewa = db.data.others.sewa = []
+const _level = db.data.others.level = []
 const _petualang = db.data.others.petualang = []
 const balance = db.data.others.balance = []
 const autosticker = db.data.others.autosticker = []
 const prem = db.data.others.prem = []
 const ban = db.data.others.ban = []
 const bocil = db.data.others.bocil = []
-const commund = db.data.others.commund = { type: String };
+const commund = db.data.others.commund = []
 const hitbot = db.data.others.hitbot = []
 const userHit = db.data.others.userHit = []
 const db_respon_list = db.data.others.list = []
