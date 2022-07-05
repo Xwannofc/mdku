@@ -95,29 +95,29 @@ let hit = [];
 const { addCmd, AddHituser } = require("./Lib/hitbot.js");
 
 // read database
-let tebaklagu = db.data.game.tebaklagu = []
-let kuismath = db.data.game.math = []
-let tebakgambar = db.data.game.tebakgambar = []
-let tebakkata = db.data.game.tebakkata = []
-let caklontong = db.data.game.lontong = []
-let caklontong_desk = db.data.game.lontong_desk = []
-let tebakkalimat = db.data.game.kalimat = []
-let tebaklirik = db.data.game.lirik = []
-let tebaktebakan = db.data.game.tebakan = []
-const sewa = db.data.others.sewa = []
-const _level = db.data.others.level = []
-const _petualang = db.data.others.petualang = []
-const balance = db.data.others.balance = []
-const autosticker = db.data.others.autosticker = []
-const prem = db.data.others.ban = []
-const ban = db.data.others.ban = []
+let tebaklagu = db.data.game.tebaklagu = { type: String },
+let kuismath = db.data.game.math = { type: String },
+let tebakgambar = db.data.game.tebakgambar = { type: String },
+let tebakkata = db.data.game.tebakkata = { type: String },
+let caklontong = db.data.game.lontong = { type: String },
+let caklontong_desk = db.data.game.lontong_desk = { type: String },
+let tebakkalimat = db.data.game.kalimat = { type: String },
+let tebaklirik = db.data.game.lirik = { type: String },
+let tebaktebakan = db.data.game.tebakan = { type: String },
+const sewa = db.data.others.sewa = { type: String },
+const _level = db.data.others.level = { type: String },
+const _petualang = db.data.others.petualang = { type: String },
+const balance = db.data.others.balance = { type: String },
+const autosticker = db.data.others.autosticker = { type: String },
+const prem = db.data.others.ban = { type: String },
+const ban = db.data.others.ban = { type: String }
 const bocil = fs.readFileSync("./Database/bocil.json");
 
-const commund = db.data.others.commund = []
-const hitbot = db.data.others.hitbot = []
-const userHit = db.data.others.userHit = []
-const db_respon_list = db.data.others.list = []
-const mute = db.data.others.mute = []
+const commund = db.data.others.commund = { type: String },
+const hitbot = db.data.others.hitbot = { type: String },
+const userHit = db.data.others.userHit = { type: String },
+const db_respon_list = db.data.others.list = { type: String },
+const mute = db.data.others.mute = { type: String },
 
 blocked = []
 const turbrek = `break`
