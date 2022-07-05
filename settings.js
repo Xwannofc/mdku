@@ -32,7 +32,7 @@ global.mess = {
     private: 'Fitur Digunakan Hanya Untuk Private Chat!!!',
     bot: 'Fitur Khusus Pengguna Nomor Bot!!!',
     error: 'Error Kak Silahkan Chat Owner',
-    wait: '❗Waittt...',
+   wait: '❗Sedang Memproses...',
     noPetualang: 'Itssss Kamu Belum Jadi Member Petualang, Silahkan Ketik .joinrpg <namamu>',
     endLimit: 'Limit Harian Anda Telah Habis, Limit Akan Direset Setiap Jam 12',
     premium: 'Maaf Sebelumya Kamu Belum Premium, Silahkan Pencet Di Bawah Untuk Beli Premium',
