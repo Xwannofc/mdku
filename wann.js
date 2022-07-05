@@ -106,7 +106,7 @@ const tebaklirik = db.data.game.lirik = { type: String };
 const tebaktebakan = db.data.game.tebakan = { type: String };
 const sewa = db.data.others.sewa = { type: String };
 const _level = db.data.others.level = { type: String };
-const _petualang = db.data.others.petualang = { type: String };
+const _petualang = db.data.others.petualang = []
 const balance = db.data.others.balance = []
 const autosticker = db.data.others.autosticker = []
 const prem = db.data.others.prem = []
