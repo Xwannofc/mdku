@@ -95,30 +95,28 @@ let hit = [];
 const { addCmd, AddHituser } = require("./Lib/hitbot.js");
 
 // read database
-const tebaklagu = db.data.game.tebaklagu = { type: String },
-const kuismath = db.data.game.math = { type: String },
-const tebakgambar = db.data.game.tebakgambar = { type: String },
-const tebakkata = db.data.game.tebakkata = { type: String },
-const caklontong = db.data.game.lontong = { type: String },
-const caklontong_desk = db.data.game.lontong_desk = { type: String },
-const tebakkalimat = db.data.game.kalimat = { type: String },
-const tebaklirik = db.data.game.lirik = { type: String },
-const tebaktebakan = db.data.game.tebakan = { type: String },
-const sewa = db.data.others.sewa = { type: String },
-const _level = db.data.others.level = { type: String },
-const _petualang = db.data.others.petualang = { type: String },
-const balance = db.data.others.balance = { type: String },
-const autosticker = db.data.others.autosticker = { type: String },
-const prem = db.data.others.ban = { type: String },
-const ban = db.data.others.ban = { type: String }
-const bocil = fs.readFileSync("./Database/bocil.json");
-
-const commund = db.data.others.commund = { type: String },
-const hitbot = db.data.others.hitbot = { type: String },
-const userHit = db.data.others.userHit = { type: String },
-const db_respon_list = db.data.others.list = { type: String },
-const mute = db.data.others.mute = { type: String },
-
+const tebaklagu = db.data.game.tebaklagu = { type: String };
+const kuismath = db.data.game.math = { type: String };
+const tebakgambar = db.data.game.tebakgambar = { type: String };
+const tebakkata = db.data.game.tebakkata = { type: String };
+const caklontong = db.data.game.lontong = { type: String };
+const caklontong_desk = db.data.game.lontong_desk = { type: String };
+const tebakkalimat = db.data.game.kalimat = { type: String };
+const tebaklirik = db.data.game.lirik = { type: String };
+const tebaktebakan = db.data.game.tebakan = { type: String };
+const sewa = db.data.others.sewa = { type: String };
+const _level = db.data.others.level = { type: String };
+const _petualang = db.data.others.petualang = { type: String };
+const balance = db.data.others.balance = []
+const autosticker = db.data.others.autosticker = []
+const prem = db.data.others.prem = []
+const ban = db.data.others.ban = []
+const bocil = db.data.others.bocil = []
+const commund = db.data.others.commund = { type: String };
+const hitbot = db.data.others.hitbot = []
+const userHit = db.data.others.userHit = []
+const db_respon_list = db.data.others.list = []
+const mute = db.data.others.mute = []
 blocked = []
 const turbrek = `break`
 
