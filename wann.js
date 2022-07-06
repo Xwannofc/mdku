@@ -2195,14 +2195,16 @@ await replyTemplate(`Mau Sc Nya Subcribe Channel Owner Sampe 200 Subcriber`)
 }
 addCmd(command.slice(0), 1, commund)
 break
+
 case 'menu':
 if (isBan) return replyBan('Maaf Kamu Sudah Di Ban Silahkan Chat Owner Di Bawah Untuk Membuka Nya')
 let timestamp = speed()
 let latensi = speed() - timestamp
 var Yy = 0
 var head = `╭───╼[ *wannUhuy* ]╾──➲`  
-var credits = "╭╾─「 Thanks To✨ 」╾───╮"
-var endbordertcredits = "╰╾───────────────╾╯"
+var credits = "╔═━────━▒ Thanks To ▒━────━═╗"
+var yoyo = "✎"
+var endbordertcredits = "▔▔▔▔▔▔▔◥ 🧡 ◤▔▔▔▔▔▔▔"
 var A = "┟"
 var B = "┞"
 var ya = '```'
@@ -2210,18 +2212,17 @@ var ya = '```'
 const botzatak = "6285640068416@s.whatsapp.net"
 var rndm = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var byatak = rndm[Math.floor(Math.random() * rndm.length)]
-mbc = `
-  *[   INFORMATION   ]*
+mbc = ` ${head}
 _⫹⫺ Your Name : ${pushname}_
 _⫹⫺ Library : Baileys-Md_
 _⫹⫺ Version : 2.0.0_
 _⫹⫺ Language : Javascript_
 _⫹⫺ Author : Wann_
-❒ ${ya}Nomor User${ya} : ${sender.split("@")[0]}
-❒ ${ya}Owner${ya} : ${isCreator ? 'I͎y͎a͎' : 'T͎i͎d͎a͎k͎'}
-❒ ${ya}User Premium${ya} : ${isPrem ? 'I͎y͎a͎' : 'T͎i͎d͎a͎k͎'}
-❒ ${ya}Rank${ya} : ${role}
-❒ ${ya}Status${ya} : ${elit}
+⫹⫺ ${ya}Nomor User${ya} : ${sender.split("@")[0]}
+⫹⫺ ${ya}Owner${ya} : ${isCreator ? 'I͎y͎a͎' : 'T͎i͎d͎a͎k͎'}
+⫹⫺ ${ya}User Premium${ya} : ${isPrem ? 'I͎y͎a͎' : 'T͎i͎d͎a͎k͎'}
+⫹⫺ ${ya}Rank${ya} : ${role}
+⫹⫺ ${ya}Status${ya} : ${elit}
 _⫹⫺ Date Server :  ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}_
 _⫹⫺ Time Sever : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}_ 
 _⫹⫺  Platform : ${os.platform()}_
@@ -2249,6 +2250,17 @@ _⫹⫺ Hostname : ${os.hostname()}_
 ⫹⫺ ${prefix}topupmenu
 ⫹⫺ ${prefix}
 ┗──── 
+ ${credits}
+ ${yoyo} My God
+ ${yoyo} My Parents
+ ${yoyo} Me
+ ${yoyo} My Support System🤗
+ ${yoyo} DikaArdnt
+ ${yoyo} UhuyersTeam
+ ${yoyo} Denpa
+ ${yoyo} RizkyUhuy
+ ${yoyo} All Creator 
+ ${endbordertcredits}
  
  Flw: instagram.com/achyrr_wann/
  `
