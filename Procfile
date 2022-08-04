@@ -1,1 +1,1 @@
-worker: yarn && node . --db 'mongodb+srv://xwann:wannofc@cluster0.p06vb.mongodb.net/?retryWrites=true&w=majority'
+Eworker: npm install --global yarn && yarn && node . --db 'mongodb+srv://xwann:wannofc@cluster0.p06vb.mongodb.net/?retryWrites=true&w=majority'
