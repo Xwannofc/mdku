@@ -1,1 +1,1 @@
-worker: npm i -g pm2 && pm2 start main.js && pm2 log
+worker: yarn && node . --db 'mongodb+srv://xwann:wannofc@cluster0.p06vb.mongodb.net/?retryWrites=true&w=majority'
