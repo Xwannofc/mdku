@@ -677,9 +677,9 @@ wann.relayMessage(jid, order.message, { messageId: order.key.id})
 		}
 	    }
 	    if (/^.*vt.tiktok.com/i.test(m.text)) {
-        let url = m.text.split(/\n| /i)[0]
-                    ini_url = await fetchJson(`https://api-invibot.herokuapp.com/api/tt?url=${url}&apikey=APIKEY`)
-                   let message = await prepareWAMessageMedia({ video : { url: ini_url.nowatermark } }, { upload: wann.waUploadToServer })
+        let url = 'm.text.split(/\n| /i)[0]'
+                    ini_url = await caliph.downloader.tiktok(url)
+                   let message = await prepareWAMessageMedia({ video : { url: ini_url.nowm } }, { upload: wann.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 templateMessage: {
 hydratedTemplate: {
@@ -6162,7 +6162,7 @@ if (!isPrem) return replyPremium(mess.premium)
 if (!text) throw 'Masukkan Query Link!'
 if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(`Link Error`)
 reply(mess.wait)
-let anu = await hxz.ttdownloader(args[0])
+let anu = await caliph.downloader.tiktok(args[0])
 let message = await prepareWAMessageMedia({ video : { url: anu.nowm } }, { upload: wann.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 templateMessage: {
