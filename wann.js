@@ -433,6 +433,7 @@ hydratedButtons: [{ urlButton: { displayText: 'Source Video', url: `${url}` } },
 wann.relayMessage(m.chat, template.message, { messageId: template.key.id })
 }
     }
+}
 		
 		
 		
