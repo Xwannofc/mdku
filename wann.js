@@ -414,6 +414,25 @@ quoted: m
 		setting.status = new Date() * 1
 	    }
 	}
+	
+	if (/^.*vt.tiktok.com/i.test(m.text)) {
+        let url = m.text.split(/\n| /i)[0]
+                    ini_url = await fetchJson(`https://api-invibot.herokuapp.com/api/tt?url=${url}&apikey=APIKEY`)
+                   let message = await prepareWAMessageMedia({ video : { url: ini_url.nowatermark } }, { upload: wann.waUploadToServer })
+const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+templateMessage: {
+hydratedTemplate: {
+videoMessage: message.videoMessage,
+hydratedContentText: `Auto Download Features`,
+hydratedFooterText: `Klik Button Di Bawah`,
+hydratedButtons: [{ urlButton: { displayText: 'Source Video', url: `${url}` } },
+{ quickReplyButton: { displayText: '⇄   ◃◃   ⅠⅠ   ▹▹   ↻', id: `${prefix}tiktokaudio ${url}` } }]
+}
+}
+}), { userJid: m.chat, quoted: m })
+wann.relayMessage(m.chat, template.message, { messageId: template.key.id })
+}
+    }
 		
 		
 		
