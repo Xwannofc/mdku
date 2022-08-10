@@ -677,7 +677,7 @@ wann.relayMessage(jid, order.message, { messageId: order.key.id})
 		}
 	    }
 	    if (/^.*vt.tiktok.com/i.test(m.text)) {
-        let url = 'm.text.split(/\n| /i)[0]'
+        let url = m.text.split(/\n| /i)[0]
                     ini_url = await caliph.downloader.tiktok(url)
                    let message = await prepareWAMessageMedia({ video : { url: ini_url.nowm } }, { upload: wann.waUploadToServer })
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
