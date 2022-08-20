@@ -421,9 +421,7 @@ quoted: m
 		
 		if (m.sender.startsWith('212')) return wann.updateBlockStatus(m.sender, 'block')
 
-	    wann.sendReadReceipt(from, sender, [m.key.id])
-		wann.sendPresenceUpdate('available', from)
-		
+	    
 		if (m.sender.startsWith('212')) return wann.groupParticipantsUpdate(m.chat, [sender], 'remove')
 		
 		try {
